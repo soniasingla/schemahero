@@ -13,11 +13,11 @@ jobs:
           go-version: "1.16.2"
       - uses: actions/checkout@v2
       - run: make all
-      - uses: actions/upload-artifact@v2.2.2
+      - uses: actions/upload-artifact@v2.2.3
         with:
           name: kubectl-schemahero
           path: bin/kubectl-schemahero
-      - uses: actions/upload-artifact@v2.2.2
+      - uses: actions/upload-artifact@v2.2.3
         with:
           name: manager
           path: bin/manager
